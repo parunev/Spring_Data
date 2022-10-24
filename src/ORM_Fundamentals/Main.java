@@ -16,7 +16,7 @@ public class Main {
         createConnection();
         Connection connection = getConnection();
         EntityManager<User> userEntityManager = new EntityManager<>(connection);
-
+        
         Scanner scanner = new Scanner(System.in);
 
         String username = scanner.nextLine();
