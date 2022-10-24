@@ -4,7 +4,7 @@ import java.sql.*;
 import java.util.ArrayDeque;
 
 public class Print_All_Minion_Names {
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException { //Parunev
         Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/minions_db", "root", "root");
         PreparedStatement minions = connection.prepareStatement("SELECT `name` FROM minions ORDER BY id ");
         ResultSet rs = minions.executeQuery();

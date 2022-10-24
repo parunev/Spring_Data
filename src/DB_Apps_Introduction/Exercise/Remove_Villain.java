@@ -4,7 +4,7 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class Remove_Villain {
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args) throws SQLException { //Parunev
         Scanner scanner = new Scanner(System.in);
         Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/minions_db", "root", "root");
 
