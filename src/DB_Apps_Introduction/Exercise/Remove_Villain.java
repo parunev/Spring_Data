@@ -34,12 +34,14 @@ public class Remove_Villain {
             bye_stmt_v.setInt(1, villain_id);
             bye_stmt_v.executeUpdate();
 
+            connection.commit();
+
             System.out.printf("%s was deleted%n", v);
             System.out.printf("%d minions released%n", freeMinions);
 
         } catch (SQLException e) {
             e.printStackTrace();
-            connection.rollback();
+            connection.close();
         }
 
         connection.close();
